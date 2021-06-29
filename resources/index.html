@@ -4,26 +4,26 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
         
-        <link rel="canonical" href="https://www.oxbase.com/">
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Oxbase</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        
+        <link rel="canonical" href="https://www.oxbase.com/resources/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Resources - Oxbase</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
 
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap.min.js" defer></script>
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">Oxbase</a>
+                <a class="navbar-brand" href="..">Oxbase</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -33,11 +33,11 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li class="navitem active">
-                                <a href="." class="nav-link">Home</a>
-                            </li>
                             <li class="navitem">
-                                <a href="resources/" class="nav-link">Resources</a>
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Resources</a>
                             </li>
                         </ul>
 
@@ -48,12 +48,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
+                                <a rel="prev" href=".." class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="resources/" class="nav-link">
+                                <a rel="next" class="nav-link disabled">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -74,79 +74,12 @@
     
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="1"><a href="#oxbasecom" class="nav-link">Oxbase.com</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#node-details" class="nav-link">Node Details</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#how-i-manage-it" class="nav-link">How I manage it.</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#things-ive-learned" class="nav-link">Things I've Learned</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#my-next-node" class="nav-link">My Next Node</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="oxbasecom">Oxbase.com</h1>
-<p>A dump of what I've learned from running a <strong>lighting routing node</strong> for the past year. This is NOT how you should do it! </p>
-<blockquote>
-<p>Follow <a href="https://twitter.com/oxbased">@oxbased</a> for updates.</p>
-</blockquote>
-<h2 id="node-details">Node Details</h2>
-<ul>
-<li>capacity: .86 BTC (.5 BTC local)</li>
-<li>channels: 19</li>
-<li>forwards / month: ~50M sats ($25k)</li>
-</ul>
-<h2 id="how-i-manage-it">How I manage it.</h2>
-<p>I don't have any automation set up. Every couple days, while I'm taking a deuce, I'll "work on my node".</p>
-<ul>
-<li>Lower fees 5% on channels with high local balances.</li>
-<li>Raise fees 5% on channels with low local balance and try to rebalance.</li>
-<li>Use services to balance there respective channels.<ul>
-<li>Buy something on Fold</li>
-<li>Move sats to <a href="http://coinos.io">Coinos.io</a> wallet.</li>
-<li>Withdraw sats from <a href="https://river.com/signup?r=3ZWPWH7X">River.com</a>.</li>
-</ul>
-</li>
-<li>If fees are low &lt;20 sats/vbyte:<ul>
-<li>Close channels that I can't re-balance.</li>
-<li>Open channels to services I use.</li>
-<li>Open channels to nodes I think will earn routing fees.</li>
-</ul>
-</li>
-</ul>
-<h2 id="things-ive-learned">Things I've Learned</h2>
-<ul>
-<li>Connecting to nodes that have many &gt;100 channels rarely route anything. This is because many of their channels are not balanced so most attempted transactions fail.</li>
-<li>Many of the rebalancing, loop and even send from specific channel functions from Thunderhub 403 timeout because of limits in BTCPayserver.</li>
-</ul>
-<h2 id="my-next-node">My Next Node</h2>
-<ul>
-<li>Will be only a lightning node and nothing else.</li>
-<li>Still used a pruned bitcoin node because I don't want to pay to host a bitcoin node and I don't trust the reliability of my home internet to host a full bitcoin node here.</li>
-<li>Make 10M sats the minimum channel size</li>
-<li>Use BOS or write logic to do what I've been doing manually.</li>
-<li>Don't use it as a personal node. Routing only. Connect my personal node.</li>
-</ul>
-<h3 id="resources-i-use">Resources I Use</h3>
-<ul>
-<li><a href="https://mempool.space/">Mempool.space</a> - mempool trends and prices</li>
-<li><a href="https://bitbo.io/">bitbo.io</a> - quick dense bitcoin stats</li>
-</ul></div>
+</div>
             </div>
         </div>
 
@@ -155,11 +88,11 @@
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = ".",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -224,8 +157,3 @@
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.2.1
-Build Date UTC : 2021-06-29 19:31:00.649861+00:00
--->
