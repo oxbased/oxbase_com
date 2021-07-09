@@ -1,130 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
-        
-        <link rel="canonical" href="https://www.oxbase.com/">
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Oxbase</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="None">
+  
+  <link rel="canonical" href="https://www.oxbase.com/">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>Oxbase</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
-    </head>
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Home";
+    var mkdocs_page_input_path = "index.md";
+    var mkdocs_page_url = "/";
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
 
-    <body class="homepage">
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href=".">Oxbase</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<body class="wy-body-for-nav" role="document">
 
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="navitem active">
-                                <a href="." class="nav-link">Home</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="resources/" class="nav-link">Resources</a>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="resources/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
+  <div class="wy-grid-for-nav">
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="1"><a href="#oxbasecom" class="nav-link">Oxbase.com</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#node-details" class="nav-link">Node Details</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#how-i-manage-it" class="nav-link">How I manage it.</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#things-ive-learned" class="nav-link">Things I've Learned</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#my-next-node" class="nav-link">My Next Node</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
-        </ul>
-    </div>
-</div></div>
-                    <div class="col-md-9" role="main">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> Oxbase</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
 
-<h1 id="oxbasecom">Oxbase.com</h1>
-<p>A dump of what I've learned from running a <strong>lighting routing node</strong> for the past year. This is NOT how you should do it! </p>
-<blockquote>
-<p>Follow <a href="https://twitter.com/oxbased">@oxbased</a> for updates. Message me to open ballanced channels.</p>
-</blockquote>
-<h2 id="node-details">Node Details</h2>
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href=".">Home</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#how-i-manage-it">How I manage it.</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#adjust-fees">Adjust Fees</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#balance-channels">Balance Channels</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#open-close-channels">Open / Close Channels</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#things-ive-learned">Things I've Learned</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#btcpayserver">BTCPayserver</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#my-next-node">My Next Node</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#resources-i-use">Resources I Use</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="resources/">Resources</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">Oxbase</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Home</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="oxbasecom">Oxbase.com</h1>
+<p>A midsize routing node my lightning projects. </p>
 <ul>
-<li>capacity: 121,916,580 sats </li>
-<li>channels: 33</li>
+<li>Follow <a href="https://twitter.com/oxbased">@oxbased</a> for updates. </li>
+<li>Node Details on <a href="https://amboss.space/node/025176c4be908ee06946c27991949391e50af961328469772dd04aead0f951f1cd">Amboss</a></li>
 <li>forwards / month: ~50M sats ($25k)</li>
-<li>Min new channel Size &gt;5M sats</li>
+<li>Minimum new channel size &gt;5M sats</li>
 </ul>
-<p><a href="https://amboss.space/node/025176c4be908ee06946c27991949391e50af961328469772dd04aead0f951f1cd">Amboss Link</a></p>
+<blockquote>
+<p><a href="https://twitter.com/oxbased">Message me</a> to open ballanced channels.</p>
+</blockquote>
 <h2 id="how-i-manage-it">How I manage it.</h2>
-<p>I don't have any automation set up yet. Every couple days, while I'm taking a deuce, I'll "work on my node".</p>
+<p>I don't have any automation yet. Every week, I do the following.</p>
+<h4 id="adjust-fees">Adjust Fees</h4>
 <ul>
 <li>Lower fees 5% on channels with high local balances.</li>
 <li>Raise fees 5% on channels with low local balance and try to rebalance.</li>
-<li>Use services to balance there respective channels.<ul>
+</ul>
+<h4 id="balance-channels">Balance Channels</h4>
+<ul>
+<li>
+<p>Use services to balance there respective channels.</p>
+<ul>
 <li>Buy something on Fold</li>
 <li>Move sats to <a href="http://coinos.io">Coinos.io</a> wallet.</li>
 <li>Withdraw sats from <a href="https://river.com/signup?r=3ZWPWH7X">River.com</a>.</li>
+<li>Send sats to my Wallet of Satoshi</li>
 </ul>
 </li>
-<li>If fees are low &lt;20 sats/vbyte:<ul>
+<li>
+<p>Circular Rebalances: This almost never works for me at low enough fees. </p>
+</li>
+</ul>
+<h4 id="open-close-channels">Open / Close Channels</h4>
+<ul>
+<li>If on chain fees are low &lt;20 sats/vbyte:<ul>
 <li>Close channels that I can't re-balance.</li>
 <li>Open channels to services I use.</li>
 <li>Open channels to nodes I think will earn routing fees.</li>
@@ -133,14 +155,18 @@
 </ul>
 <h2 id="things-ive-learned">Things I've Learned</h2>
 <ul>
-<li>Connecting to nodes that have many &gt;100 channels rarely route anything. This is because many of their channels are not balanced so most attempted transactions fail.</li>
-<li>Many of the rebalancing, loop and even send from specific channel functions from Thunderhub 403 timeout because of limits in BTCPayserver.</li>
+<li>Connecting to nodes that have many &gt;100 channels rarely route anything. I suspect this is because many of their channels are not balanced so most attempted transactions fail.</li>
+</ul>
+<h4 id="btcpayserver">BTCPayserver</h4>
+<ul>
+<li>When using Thunderhub to rebalance, many of the requests timeout because of my nginx settings from BTCPayserver.</li>
+<li><a href="https://github.com/btcpayserver/btcpayserver/discussions/2651#discussioncomment-957878">This</a> is how you can edit the lnd settings in BTCPayserver.</li>
 </ul>
 <h2 id="my-next-node">My Next Node</h2>
 <ul>
 <li>Will be only a lightning node and nothing else.</li>
-<li>Still used a pruned bitcoin node because I don't want to pay to host a bitcoin node and I don't trust the reliability of my home internet to host a full bitcoin node here.</li>
-<li>Make 10M sats the minimum channel size</li>
+<li>Still used a pruned bitcoin node to save hosting costs.</li>
+<li>Make 5M sats the minimum channel size. </li>
 <li>Use BOS or write logic to do what I've been doing manually.</li>
 <li>Don't use it as a personal node. Routing only. Connect my personal node.</li>
 </ul>
@@ -149,86 +175,60 @@
 <li><a href="https://mempool.space/">Mempool.space</a> - mempool trends and prices</li>
 <li><a href="https://bitbo.io/">bitbo.io</a> - quick dense bitcoin stats</li>
 <li><a href="https://amboss.space">amboss.space</a> - lightning network explorer</li>
-</ul></div>
+</ul>
+              
             </div>
-        </div>
-
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>
-            var base_url = ".",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="resources/" class="btn btn-neutral float-right" title="Resources">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
         </div>
-    </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+      <span><a href="resources/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
 </div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme_extra.js" defer></script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
 
-    </body>
+</body>
 </html>
 
 <!--
 MkDocs version : 1.2.1
-Build Date UTC : 2021-07-07 22:33:20.385297+00:00
+Build Date UTC : 2021-07-09 00:46:58.034603+00:00
 -->
