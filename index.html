@@ -138,13 +138,11 @@
 </ul>
 <p>Circular Rebalances: This almost never works for me at reasonable fee levels.</p>
 <h4 id="open-close-channels">Open / Close Channels</h4>
+<p>If on chain fees are low &lt;20 sats/vbyte:</p>
 <ul>
-<li>If on chain fees are low &lt;20 sats/vbyte:<ul>
 <li>Close channels that I can't re-balance.</li>
 <li>Open channels to services I use.</li>
 <li>Open channels to nodes I think will earn routing fees.</li>
-</ul>
-</li>
 </ul>
 <h2 id="things-ive-learned">Things I've Learned</h2>
 <ul>
@@ -160,14 +158,16 @@
 <li>Will be only a lightning node and nothing else.</li>
 <li>Still used a pruned bitcoin node to save hosting costs.</li>
 <li>Make 5M sats the minimum channel size. </li>
-<li>Use BOS or write logic to do what I've been doing manually.</li>
-<li>Don't use it as a personal node. Routing only. Connect my personal node.</li>
+<li>Use Balance of Satoshis to get more details about node interworkings. </li>
+<li>Write logic to manage channels how I've been doing manually.</li>
+<li>Don't use it as a wallet. Do routing only. Connect my wallet node to the routing node</li>
 </ul>
 <h3 id="resources-i-use">Resources I Use</h3>
 <ul>
-<li><a href="https://mempool.space/">Mempool.space</a> - mempool trends and prices</li>
+<li><a href="https://mempool.space/">mempool.space</a> - mempool trends and prices</li>
 <li><a href="https://bitbo.io/">bitbo.io</a> - quick dense bitcoin stats</li>
 <li><a href="https://amboss.space">amboss.space</a> - lightning network explorer</li>
+<li><a href="https://www.lunanode.com/">lundanode.com</a> - hosting provider that accepts lightning payments</li>
 </ul>
               
             </div>
@@ -223,5 +223,5 @@
 
 <!--
 MkDocs version : 1.2.1
-Build Date UTC : 2021-07-09 03:25:27.187796+00:00
+Build Date UTC : 2021-07-09 04:13:45.886277+00:00
 -->
