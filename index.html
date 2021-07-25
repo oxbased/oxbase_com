@@ -59,15 +59,19 @@
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#things-ive-learned">Things I've Learned</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#btcpayserver">BTCPayserver</a>
-    </li>
-        </ul>
-    </li>
     <li class="toctree-l2"><a class="reference internal" href="#my-next-node">My Next Node</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#quick-links">Quick Links</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#resources-i-use">Resources I Use</a>
+    <li class="toctree-l3"><a class="reference internal" href="#network-and-chain-explorers">Network and Chain Explorers</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#create-liquidity">Create Liquidity</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#provision-a-lightning-node">Provision a Lightning Node</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#news-and-information">News and Information</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#random">Random</a>
     </li>
         </ul>
     </li>
@@ -75,7 +79,7 @@
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="resources/">Resources</a>
+                    <li class="toctree-l1"><a class="reference internal" href="recommendations/">Recommendations</a>
                     </li>
                 </ul>
       </div>
@@ -144,15 +148,6 @@
 <li>Open channels to services I use.</li>
 <li>Open channels to nodes I think will earn routing fees.</li>
 </ul>
-<h2 id="things-ive-learned">Things I've Learned</h2>
-<ul>
-<li>Connecting to nodes that have many &gt;100 channels rarely route anything. I suspect this is because many of their channels are not balanced so most attempted transactions fail.</li>
-</ul>
-<h4 id="btcpayserver">BTCPayserver</h4>
-<ul>
-<li>When using Thunderhub to rebalance, many of the requests timeout because of my nginx settings from BTCPayserver.</li>
-<li><a href="https://github.com/btcpayserver/btcpayserver/discussions/2651#discussioncomment-957878">This</a> is how you can edit the lnd settings in BTCPayserver.</li>
-</ul>
 <h2 id="my-next-node">My Next Node</h2>
 <ul>
 <li>Will be only a lightning node and nothing else.</li>
@@ -162,12 +157,37 @@
 <li>Write logic to manage channels how I've been doing manually.</li>
 <li>Don't use it as a wallet. Do routing only. Connect my wallet node to the routing node</li>
 </ul>
-<h3 id="resources-i-use">Resources I Use</h3>
+<h2 id="quick-links">Quick Links</h2>
+<h4 id="network-and-chain-explorers">Network and Chain Explorers</h4>
 <ul>
+<li><a href="https://amboss.space">amboss.space</a> - lightning network explorer</li>
+<li><a href="https://1ml.com/">1ml.com</a> - lightning network explorer</li>
+<li><a href="https://explorer.acinq.co/">Acinq</a> - lightning network map</li>
 <li><a href="https://mempool.space/">mempool.space</a> - mempool trends and prices</li>
 <li><a href="https://bitbo.io/">bitbo.io</a> - quick dense bitcoin stats</li>
-<li><a href="https://amboss.space">amboss.space</a> - lightning network explorer</li>
-<li><a href="https://www.lunanode.com/">lunanode.com</a> - hosting provider that accepts lightning payments</li>
+<li><a href="https://yalls.org/nodes/">yalls.org/nodes</a> - potentially good routing peers</li>
+</ul>
+<h4 id="create-liquidity">Create Liquidity</h4>
+<ul>
+<li><a href="https://lightningnetwork.plus/swaps/338">LightningNetwork+</a> - connects node operators to create chains</li>
+</ul>
+<h4 id="provision-a-lightning-node">Provision a Lightning Node</h4>
+<ul>
+<li><a href="https://run-lnd.readthedocs.io/en/latest/">Run-LND</a> - scripts to setup a lightning node on AWS or linux host</li>
+<li><a href="https://btcpayserver.org/">BTCPayServer</a> - open source bitcoin and lightning node with ability to create store</li>
+<li><a href="https://www.lunanode.com/">lunanode.com</a> - hosting provider that accepts lightning payments. <a href="https://docs.btcpayserver.org/LunaNodeWebDeployment/">Spin up BTCPayserver with just your api keys</a>.</li>
+</ul>
+<h4 id="news-and-information">News and Information</h4>
+<ul>
+<li><a href="https://twitter.com/oxbased/following">good twitter follows</a> - Who I follow on twitter. Also good weekly spaces.</li>
+<li><a href="https://www.theinvestorspodcast.com/bitcoin-fundamentals/">investors podcast</a></li>
+<li><a href="https://www.whatbitcoindid.com/">what bitcoin did</a></li>
+</ul>
+<h4 id="random">Random</h4>
+<ul>
+<li>Connecting to nodes that have many &gt;100 channels rarely route anything. I suspect this is because many of their channels are not balanced so most attempted transactions fail.</li>
+<li>When using Thunderhub to rebalance, many of the requests timeout because of my nginx settings from BTCPayserver.</li>
+<li><a href="https://github.com/btcpayserver/btcpayserver/discussions/2651#discussioncomment-957878">This</a> is how you can edit the lnd settings in BTCPayserver.</li>
 </ul>
               
             </div>
@@ -176,7 +196,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="resources/" class="btn btn-neutral float-right" title="Resources">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="recommendations/" class="btn btn-neutral float-right" title="Recommendations">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
     </div>
@@ -204,7 +224,7 @@
     
     
     
-      <span><a href="resources/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="recommendations/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
@@ -223,5 +243,5 @@
 
 <!--
 MkDocs version : 1.2.1
-Build Date UTC : 2021-07-09 04:17:49.413951+00:00
+Build Date UTC : 2021-07-25 20:04:55.983892+00:00
 -->
