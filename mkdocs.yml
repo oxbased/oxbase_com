@@ -1,0 +1,7 @@
+site_name: Oxbase
+site_url: https://www.oxbase.com
+nav:
+    - Home: index.md
+    - Recommendations: recommendations.md
+theme:
+    name: readthedocs
